@@ -8,6 +8,7 @@ namespace Bitwise_Operator
         static void Main(string[] args)
         {
             start;
+            Console.Clear();
             int a, b;
             char c;
 
