@@ -7,6 +7,7 @@ namespace Bitwise_Operator
     {
         static void Main(string[] args)
         {
+            start;
             int a, b;
             char c;
 
@@ -32,24 +33,27 @@ namespace Bitwise_Operator
             {
                 Console.WriteLine("The Sum of " + a + " and " + b + " is: " + (a + b));
             }
-            if (c == '2')
+            else if (c == '2')
             {
                 Console.WriteLine("The Difference of " + a + " and " + b + " is: " + (a - b));
             }
-            if (c == '3')
+            else if (c == '3')
             {
                 Console.WriteLine("The Product of " + a + " and " + b + " is: " + (a *b ));
             }
-            if (c == '4')
+            else if (c == '4')
             {
                 Console.WriteLine("The Quotient of " + a + " and " + b + " is: " + (a / b));
             }
-            if (c == '5')
+            else if (c == '5')
             {
                 Console.WriteLine("The Remainder of " + a + " and " + b + " is: " + (a % b));
             }
-            
-            Console.ReadLine();
+            else
+            {
+                Console.WriteLine("Invalid Operator");
+            }
+            goto start;
         }
     }
 }
